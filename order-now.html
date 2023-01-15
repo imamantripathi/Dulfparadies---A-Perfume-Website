@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Duftparadies - A chogan perfumes website</title>
+  <link rel="website icon" href="img/logo.png" type="png" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <style></style>
+</head>
+
+<body>
+  <section id="header">
+    <a href="index.html"><img src="img/logo.png" alt="logo" /></a>
+    <div>
+      <ul id="navbar">
+        <li><a href="index.html">Heim</a></li>
+        <div class="dropdown">
+          <li class="dropbtn">Parfums <i class="far fa-arrow-down"></i></li>
+          <div class="dropdown-content">
+            <a href="shop.html">Ganz</a>
+            <a href="damen.html">Damen</a>
+            <a href="herren.html">Herren</a>
+            <a href="luxury.html">Luxury</a>
+
+          </div>
+        </div>
+        <!-- <li><a href="blog.html">Blog</a></li> -->
+        
+        <li><a href="partner.html">Vertriebspartner Werden</a></li>
+        <li><a href="chogan.html">Was ist CHOGAN?</a></li>
+        <li><a href="about.html">Über uns</a></li>
+        <li><a href="contact.html">Kontakt uns</a></li>
+        <li>
+          <!-- <i class="far fa-shopping-bag" id="lg-bag"></i> -->
+          <a href="cart.html" id="lg-bag"><i class="far fa-shopping-bag"></i></a>
+        </li>
+        <i id="close" class="far fa-times"></i>
+      </ul>
+    </div>
+    <div id="mobile">
+      <!-- <a href="cart.html"><i class="far fa-shopping-bag"></i></a> -->
+      <i class="far fa-shopping-bag"></i>
+
+      <i id="bar" class="fas fa-outdent"></i>
+    </div>
+  </section>
+  <section id="page-header" class="order-now-header">
+    <h2>#Jetzt bestellen</h2>
+
+    <p>Wählen Sie aus einer großen Auswahl an hochwertigen Düften</p>
+  </section>
+  <section id="form-details" class="section-m1">
+    <form action="send-order.php" method="post">
+      <span>Benötigen Sie einige Details!</span>
+      <h2>Wir beliefern Sie gerne!</h2>
+      <input type="text" name="name" placeholder="Dein Name" required />
+      <input type="number" name="mobile" placeholder="Handy-Nr." required />
+      <select name="perfume" id="perfumes">
+        <option value="">Wählen Sie Ihre Torte:</option>
+        <option value="001 – Million Chogan Parfum Duftnote (Ambery Oriental / Leder)">001 – Million Chogan Parfum
+          Duftnote (Ambery Oriental / Leder)</option>
+        <option value="002 – Acqua di Chogan Parfum Duftnote (Floral/ Wässrig)">002 – Acqua di Chogan Parfum Duftnote
+          (Floral/ Wässrig)</option>
+        <option value="003 – Fahrenheit Chogan Parfum">003 – Fahrenheit Chogan Parfum</option>
+        <option value="004 – The One Chogan Parfum Duftnote (Woody / Ambery Oriental)">004 – The One Chogan Parfum
+          Duftnote (Woody / Ambery Oriental)</option>
+        <option value="005 – Hugo Chogan Parfum">005 – Hugo Chogan Parfum</option>
+        <option value="006 – Opium Chogan Parfum Duftnote (Ambery Oriental / Gourmand)">006 – Opium Chogan Parfum
+          Duftnote (Ambery Oriental / Gourmand)</option>
+        <option value="007 – Je t’adore Chogan Parfum Duftnote (Floral / Floral)">007 – Je t’adore Chogan Parfum
+          Duftnote (Floral / Floral)</option>
+        <option value="008 – Candy Chogan Parfum Duftnote (Ambery Oriental / Gourmand)">
+          008 – Candy Chogan Parfum Duftnote (Ambery Oriental / Gourmand)
+        </option>
+        <option value="009 – Iris Noble Original Chogan Parfum Duftnote (Holzig / Floral)">009 – Iris Noble Original
+          Chogan Parfum Duftnote (Holzig / Floral)</option>
+        <option value="010 – Alien Chogan Parfum Duftnote (Floral / Ambery Oriental)">010 – Alien Chogan Parfum Duftnote
+          (Floral / Ambery Oriental)</option>
+        <option value="012 – Eau Savage Chogan Parfum Duftnote (Zitrusfrüchte / Aromatische Fougere)">012 – Eau Savage
+          Chogan Parfum Duftnote (Zitrusfrüchte / Aromatische Fougere)</option>
+        <option value="013 – Guilty Chogan Parfum">013 – Guilty Chogan Parfum</option>
+        <option value="014 – IManifesto Chogan Parfum">014 – IManifesto Chogan Parfum</option>
+        <option value="015 – Roma Chogan Parfum Duftnote (Woody / Ambery Oriental)">015 – Roma Chogan Parfum Duftnote
+          (Woody / Ambery Oriental)</option>
+        <option value="016 – Le Male Chogan Parfum Duftnote (Holzig / Aromatische Fougere)">016 – Le Male Chogan Parfum
+          Duftnote (Holzig / Aromatische Fougere)</option>
+        <option value="
+          017 – Guilty Mann Chogan Parfum Duftnote (Holzig / Zitrusfrüchte)">017 – Guilty Mann Chogan Parfum Duftnote
+          (Holzig / Zitrusfrüchte)</option>
+        <option value="018 – Déclaration Chogan Parfum Duftnote (Holzig / Zitrusfrüchte)">018 – Déclaration Chogan
+          Parfum Duftnote (Holzig / Zitrusfrüchte)</option>
+        <option value="019 – Lady Million Chogan Parfum">019 – Lady Million Chogan Parfum</option>
+        <option value="020 – La Nuit Chogan Parfum Duftnote (Holzig / Aromatische Fougere)">020 – La Nuit Chogan Parfum
+          Duftnote (Holzig / Aromatische Fougere)</option>
+        <option value="021 – Light Blue Chogan Parfum Duftnote(Aromatische Fougere / wässrig)">021 – Light Blue Chogan
+          Parfum Duftnote(Aromatische Fougere / wässrig)</option>
+        <option value="023 – Hypnotic Chogan Parfum Duftnote (Ambery Oriental / Floral)
+          ">023 – Hypnotic Chogan Parfum Duftnote (Ambery Oriental / Floral)
+        </option>
+        <option value="024 -Nr.5 Chogan Parfum Duftnote (Blumig / Aldehyd clean)">024 -Nr.5 Chogan Parfum Duftnote
+          (Blumig / Aldehyd clean)</option>
+        <option value="025 – For Her Chogan Parfum Duftnote (Chypre / Fruchtig)">025 – For Her Chogan Parfum Duftnote
+          (Chypre / Fruchtig)</option>
+        <option value="074 – Black Afgano Chogan Parfum Duftnote (Woody / Ambery (Orientalisch)">074 – Black Afgano
+          Chogan Parfum Duftnote (Woody / Ambery (Orientalisch)</option>
+        <option value="075 – X for Men Chogan Parfum Duftnote (Woody / Woody)">075 – X for Men Chogan Parfum Duftnote
+          (Woody / Woody)</option>
+        <option value="101 – Velvet Skin Chogan Parfum Duftnote (Ambery (Orientalisch) / Floral)">101 – Velvet Skin
+          Chogan Parfum Duftnote (Ambery (Orientalisch) / Floral)</option>
+        <option value="102 – Velvet Sun Original Chogan Parfum">102 – Velvet Sun Original Chogan Parfum</option>
+        <option value="106 – Fabulous Chogan Parfum Duftnote (Woody / Ambery (Orientalisch)">106 – Fabulous Chogan
+          Parfum Duftnote (Woody / Ambery (Orientalisch)</option>
+        <option value="109 -Adore Chogan Parfum Duftnote (Floral / Ambery (Orientalisch))">109 -Adore Chogan Parfum
+          Duftnote (Floral / Ambery (Orientalisch))</option>
+        <option value="111 – Cherry Chogan Parfum Duftnote (Floral / Ambery (Orientalisch)">111 – Cherry Chogan Parfum
+          Duftnote (Floral / Ambery (Orientalisch)</option>
+        <option value="112 – Portofino Chogan Parfum Duftnote (Citrus / Citrus)">112 – Portofino Chogan Parfum Duftnote
+          (Citrus / Citrus)</option>
+        <option value="117 – Tobacco Vanille Chogan Parfum Duft (Ambery (Orientalisch) / Tabak)">117 – Tobacco Vanille
+          Chogan Parfum Duft (Ambery (Orientalisch) / Tabak)</option>
+        <option value="118 – Baccarat Rouge Original Chogan Parfum Duftnote (Woody / Woody)">118 – Baccarat Rouge
+          Original Chogan Parfum Duftnote (Woody / Woody)</option>
+        <option value="129 – Erba Pura Chogan Parfum">129 – Erba Pura Chogan Parfum</option>
+        <option value="124 – ZETA Chogan Parfum">124 – ZETA Chogan Parfum</option>
+      </select>
+      <select name="quantity" id="quantity">
+        <option value="">Bitte Menge eingeben!</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="other">Other</option>
+      </select>
+      <input id="other" style="display:none;" type="text" name="quantity" placeholder="Bitte hier eintragen!">
+      <select name="weight" id="">
+        <option value="">Bitte Gewicht in ml eingeben.</option>
+        <option value="35 ml">35 ml</option>
+        <option value="50 ml">50 ml</option>
+        <option value="100 ml">100 ml</option>
+      </select>
+      <textarea name="address" cols="30" rows="10" placeholder=" Enter your Delivery Address?"></textarea>
+      <button type="submit" class="normal" name="submit">Einreichen</button>
+    </form>
+    <div class="people">
+      <img src="img/people/3.png" alt="" />
+      <p>
+        <span>Jonny A. Buron</span>Inhaberin<br />
+        Phone: +9754323453 <br />Email: johnsae@gmail.com
+      </p>
+    </div>
+  </section>
+  <section id="newsletter" class="section-p1 section-m1">
+    <div class="newstext">
+      <h4>Melden Sie sich für den Newsletter an</h4>
+      <p>
+        Erhalten Sie E-Mail-Updates zu <span>Chogan-Parfums</span> für jeden
+        Gelegenheit.
+      </p>
+    </div>
+    <div class="form">
+      <input type="text" required placeholder="Ihre E-Mail-Adresse" />
+      <button class="normal">Anmeldung</button>
+    </div>
+  </section>
+   <footer class="section-p1">
+    <div class="col">
+      <img class="logo" src="img/logo.png" alt="Logo" />
+      <h4>Kontakt</h4>
+      <p><strong>Adresse: </strong> Lorem ipsum , Germany</p>
+      <p><strong>Telefon: </strong> +32020 30022</p>
+      <p><strong>Öffnungszeiten: </strong> 24 X 7</p>
+      <div class="follow">
+        <h4>Folgen Sie uns</h4>
+        <div class="icon">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <h4>Schnelle Links</h4>
+      <a href="about.html">Über uns</a>
+      <a href="delivery.html"> Lieferbedingungen</a>
+      <a href="privacy.html">Datenschutz-Bestimmungen</a>
+      <a href="terms.html"> Terms & amp; Bedingungen</a>
+      <a href="contact.html">Kontaktiere uns</a>
+    </div>
+    <div class="col">
+      <h4>Mein Konto</h4>
+      <a href="#">Anmelden</a>
+      <a href="#">Warenkorb ansehen</a>
+      <a href="#">Meine Wunschliste</a>
+      <a href="#">Meine Bestellung verfolgen</a>
+      <a href="#">Hilfe</a>
+    </div>
+    <div class="col">
+      <p>Sichere Zahlungsgateways</p>
+      <img src="img/pay/pay.png" alt="" />
+    </div>
+    <div class="copyright">
+      <p>
+        <i class="fa fa-copyright"></i> 2023,<a href="https://www.webtoils.com/">
+          Webtoils Development LLP.</a>
+        All Rights reversed.
+      </p>
+    </div>
+  </footer>
+  <script>
+    $(document).ready(function () {
+      $("#quantity").on("change", function () {
+        if ($(this).val() === "other") {
+          $("#other").show();
+        }
+        else {
+          $("#other").hide();
+        }
+      });
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
+
+</html>

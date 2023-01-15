@@ -1,0 +1,32 @@
+.button-goback{
+  margin-top: 30px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 24px;
+  background: #000;
+  color: #fffab5;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.button-goback:hover{
+background: #fffab5;
+color: #000;
+transition: all 0.4s ease-in-out;
+-webkit-transition: all 0.4s ease-in-out;
+-moz-transition: all 0.4s ease-in-out;
+-ms-transition: all 0.4s ease-in-out;
+-o-transition: all 0.4s ease-in-out;
+}
+
+@media only screen and (max-width: 600px){
+.button-goback{
+  margin-top: 100px;
+padding: 20px;
+font-size: 15px;
+background: #000;
+color: #e8e5f4;
+}}

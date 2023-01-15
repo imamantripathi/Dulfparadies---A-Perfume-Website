@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Duftparadies - A chogan perfumes website</title>
+    <link rel="website icon" href="img/logo.png" type="png" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <section id="header">
+        <a href="index.html"><img src="img/logo.png" alt="logo" /></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Heim</a></li>
+                <div class="dropdown">
+                    <li class="dropbtn">Parfums <i class="far fa-arrow-down"></i></li>
+                    <div class="dropdown-content">
+                        <a href="shop.html">Ganz</a>
+                        <a href="damen.html">Damen</a>
+                        <a href="herren.html">Herren</a>
+                        <a href="luxury.html">Luxury</a>
+
+                    </div>
+                </div>
+                <!-- <li><a href="blog.html">Blog</a></li> -->
+
+                <li><a class="active" href="partner.html">Vertriebspartner Werden</a></li>
+                <li><a href="chogan.html">Was ist CHOGAN?</a></li>
+                <li><a href="about.html">Über uns</a></li>
+                <li><a href="contact.html">Kontakt uns</a></li>
+                <li>
+                    <!-- <i class="far fa-shopping-bag" id="lg-bag"></i> -->
+                    <a href="cart.html" id="lg-bag"><i class="far fa-shopping-bag"></i></a>
+                </li>
+                <i id="close" class="far fa-times"></i>
+            </ul>
+        </div>
+        <div id="mobile">
+            <!-- <a href="cart.html"><i class="far fa-shopping-bag"></i></a> -->
+            <i class="far fa-shopping-bag"></i>
+
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+    <section id="hero" class="hero-partner">
+        <!-- <h4>Aktualisieren Sie Ihre Erfahrung noch heute</h4> -->
+        <h2>Vertriebspartner </h2>
+        <h1>Werden</h1>
+        <p>Hier können Sie sich bei Dulfparadies als Vertriebspartner registrieren <br>und sofort loslegen:</p>
+        <button onclick="location.href='#form-details'">Jetzt beitreten</button>
+    </section>
+    <section id="form-details" class="section-m1">
+        <form action="#" method="post">
+            <span>Hinterlass eine Nachricht</span>
+            <h2>Begleiten Sie uns noch heute zum Erfolg!</h2>
+            <input type="text" name="name" placeholder="Dein Name" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <input type="number" name="mobile" placeholder="Handy-Nr." required />
+            <textarea name="message" cols="30" rows="10" placeholder="Fragen oder Kommentare"></textarea>
+            <button class="normal" name="submit">Einreichen</button>
+        </form>
+        <div class="people">
+            <img src="img/people/3.png" alt="" />
+            <p>
+                <span>Jonny A. Buron</span> Inhaberin <br />
+                Phone: +9754323453 <br />Email: johnsae@gmail.com
+            </p>
+        </div>
+    </section>
+    <section id="banner" class="section-m1">
+        <h4>Werden Sie Vertriebspartner</h4>
+        <h2>
+            Schalten Sie mit unserer <br><span>Partnerschaft </span>den Erfolg frei
+        </h2>
+        <button class="normal" onclick="window.location.href='partner.html#form-details';">
+            Tritt heute bei!
+        </button>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Melden Sie sich für den Newsletter an</h4>
+            <p>
+                Erhalten Sie E-Mail-Updates zu <span>Chogan-Parfums</span> für jeden
+                Gelegenheit.
+            </p>
+        </div>
+        <div class="form">
+            <input type="text" required placeholder="Ihre E-Mail-Adresse" />
+            <button class="normal">Anmeldung</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+          <img class="logo" src="img/logo.png" alt="Logo" />
+          <h4>Kontakt</h4>
+          <p><strong>Adresse: </strong> Lorem ipsum , Germany</p>
+          <p><strong>Telefon: </strong> +32020 30022</p>
+          <p><strong>Öffnungszeiten: </strong> 24 X 7</p>
+          <div class="follow">
+            <h4>Folgen Sie uns</h4>
+            <div class="icon">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <h4>Schnelle Links</h4>
+          <a href="about.html">Über uns</a>
+          <a href="delivery.html"> Lieferbedingungen</a>
+          <a href="privacy.html">Datenschutz-Bestimmungen</a>
+          <a href="terms.html"> Terms & amp; Bedingungen</a>
+          <a href="contact.html">Kontaktiere uns</a>
+        </div>
+        <div class="col">
+          <h4>Mein Konto</h4>
+          <a href="#">Anmelden</a>
+          <a href="#">Warenkorb ansehen</a>
+          <a href="#">Meine Wunschliste</a>
+          <a href="#">Meine Bestellung verfolgen</a>
+          <a href="#">Hilfe</a>
+        </div>
+        <div class="col">
+          <p>Sichere Zahlungsgateways</p>
+          <img src="img/pay/pay.png" alt="" />
+        </div>
+        <div class="copyright">
+          <p>
+            <i class="fa fa-copyright"></i> 2023,<a href="https://www.webtoils.com/">
+              Webtoils Development LLP.</a>
+            All Rights reversed.
+          </p>
+        </div>
+      </footer>
+    <script>
+        var nav = document.getElementById("navbar");
+        var header = document.querySelector('#header');
+        window.addEventListener('scroll', function (event) { // To listen for event
+            event.preventDefault();
+            if (window.scrollY <= 150) { // Just an example
+                header.style.backgroundColor = 'transparent'; // or default color
+            } else {
+                header.style.backgroundColor = '#fff';
+            }
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
