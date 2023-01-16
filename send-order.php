@@ -4,7 +4,7 @@ $myemail = 'info@edfeatdessert.com'; //<-----Put Your email address here.
 if (
     empty($_POST['name']) ||
     empty($_POST['mobile']) ||
-    empty($_POST['cake']) ||
+    empty($_POST['perfume']) ||
     empty($_POST['weight']) ||
     empty($_POST['quantity']) ||
     empty($_POST['address'])
@@ -13,7 +13,7 @@ if (
 }
 
 $name = $_POST['name'];
-$cake = $_POST['cake'];
+$perfume = $_POST['perfume'];
 $quantity = $_POST['quantity'];
 $mobile = $_POST['mobile'];
 $address = $_POST['address'];
@@ -31,7 +31,7 @@ if (empty($errors)) {
 
         " Here are the details:\n Name: $name  \n" .
         "Phone-No: $mobile\n " .
-        "Cake Name: $cake\n " . "Quantity: $quantity \n " . "Weight: $weight \n " . "Address: \n $address \n ";
+        "Cake Name: $perfume\n " . "Quantity: $quantity \n " . "Weight: $weight \n " . "Address: \n $address \n ";
 
     $headers = "From: $myemail\n";
 
