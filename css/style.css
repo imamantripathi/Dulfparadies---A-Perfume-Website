@@ -132,7 +132,7 @@ body {
   color: #ffd700;
 }
 #navbar li a.active::after,
-#navbar li a:hover::after  {
+#navbar li a:hover::after {
   content: "";
   width: 30%;
   height: 3px;
@@ -151,7 +151,6 @@ body {
 }
 /* Home page  */
 #hero {
- 
   height: 90vh;
   width: 100%;
   background-size: cover;
@@ -162,10 +161,10 @@ body {
   align-items: flex-start;
   justify-content: center;
 }
-.hero-index{
+.hero-index {
   background-image: url("../img/hero4.png");
 }
-.hero-partner{
+.hero-partner {
   background-image: url("../img/hero5.png");
 }
 #hero h4 {
@@ -199,7 +198,6 @@ body {
   border: 1px solid #cce7d0;
   border-radius: 4px;
   margin: 15px 0;
-  
 }
 #feature .fe-box:hover {
   box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
@@ -211,7 +209,7 @@ body {
 #feature .fe-box h6 {
   display: inline-block;
   padding: 9px 8px 6px 8px;
-  line-height:15px;
+  line-height: 15px;
   border-radius: 4px;
   color: #fdb841;
   background-color: #131314;
@@ -322,7 +320,7 @@ body {
   padding: 10px 0;
 }
 #banner h2 span {
-  color: #ef3636;
+  color: #f80202;
 }
 #banner button:hover {
   background-color: #ffd700;
@@ -465,7 +463,7 @@ footer .copyright {
   font-size: 16px;
   font-weight: 600;
 }
-#pagination > .p-active{
+#pagination > .p-active {
   background: #000;
   color: #fff;
 }
@@ -518,7 +516,7 @@ footer .copyright {
 }
 #prodetails .single-pro-details button {
   background-color: #ffd700;
-  color: #fff;
+  color: #000;
 }
 #prodetails .single-pro-details span {
   line-height: 25px;
@@ -527,7 +525,7 @@ footer .copyright {
 .about-header {
   background-image: url("../img/banner/about.jpg");
 }
-.chogan-header{
+.chogan-header {
   background-image: url("../img/banner/chogan.jpg");
 }
 #about-head {
@@ -540,15 +538,27 @@ footer .copyright {
   height: auto;
   /* padding-bottom: 30px; */
 }
-#about-head div h2{
+#about-head div h2 {
   text-align: center;
 }
 #about-head div {
-  padding: 40px;
+  padding: 40px 10px;
 }
 #about-head div > p {
   text-align: center;
   font-size: 20px;
+}
+.list {
+  text-align: left;
+  font-size: 20px;
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+.list::before {
+  content: "→";
+  color: #000;
+  padding-right: 5px;
+  /* background: #000; */
 }
 /* Contact us Page Start  */
 .contact-header {
@@ -586,14 +596,14 @@ footer .copyright {
 #form-details form button {
   background: #ffd700;
 }
-#form-details .people{
-text-align: center;
-border: 1px red solid;
-height: 270px;
-padding:20px 20px;
-/* margin: auto; */
+#form-details .people {
+  text-align: center;
+  border: 1px red solid;
+  height: 270px;
+  padding: 20px 20px;
+  /* margin: auto; */
 
-border: 1px solid #e1e1e1;
+  border: 1px solid #e1e1e1;
 }
 #form-details .people img {
   width: 100px;
@@ -630,6 +640,104 @@ border: 1px solid #e1e1e1;
 #form-details form option {
   color: #ffd700;
   background: #1a1a1a;
+}
+/* Cart Page  */
+#cart{
+  overflow-x: auto;
+}
+#cart table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  white-space: nowrap;
+}
+#cart table img {
+  width: 70px;
+}
+#cart table td:nth-child(1) {
+  width: 100px;
+  text-align: center;
+}
+#cart table td:nth-child(2) {
+  width: 150px;
+  text-align: center;
+}
+#cart table td:nth-child(3) {
+  width: 250px;
+  text-align: center;
+}
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6) {
+  width: 150px;
+  text-align: center;
+}
+#cart table td:nth-child(5) input{
+  width: 70px;
+  padding: 10px 5px 10px 15px;
+
+}
+#cart table thead{
+  border: 2px solid #e2e9e1;
+  border-left: none;
+  border-right: none;
+}
+#cart table thead td{
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size:13px ;
+  padding: 18px 0;
+
+}
+#cart table tbody tr td{
+  padding-top: 15px;
+}
+#cart table tbody td{
+font-size: 13px;
+overflow: hidden;
+}
+#cart-add{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+ #coupon{
+width: 50%;
+margin-bottom: 30px;
+}
+#coupon h3,
+#subtotal h3{
+  padding-bottom: 15px;
+}
+#coupon input{
+  padding: 10px 20px;
+  outline: none;
+  width: 60%;
+  margin-right: 10px;
+  border: 1px solid #e2e9e1;
+}
+#coupon button,#subtotal button{
+  background:#ffd700;
+padding: 10px 20px;
+}
+#subtotal{
+  width: 50%;
+  margin-bottom:30px;
+  border:1px solid #e2e2e2;
+  padding: 30px;
+}
+#subtotal table{
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+#subtotal table td{
+  width: 50%;
+  padding:10px;
+  border: 1px solid #e2e9e1;
+  font-size: 13px;
+   
 }
 
 /* Start Media Query  */
@@ -765,7 +873,7 @@ border: 1px solid #e1e1e1;
     width: 100%;
   }
   /* Order Now  */
-  #form-details .people{
+  #form-details .people {
     margin: auto;
   }
   /* About Page  */
@@ -789,5 +897,15 @@ border: 1px solid #e1e1e1;
   #form-details form {
     width: 100%;
     margin-bottom: 30px;
+  }
+  #cart-add{
+    flex-direction: column;
+  }
+  #coupon{
+    width: 100%;
+  }
+  #subtotal{
+    width: 100%;
+    padding: 20px;
   }
 }

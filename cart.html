@@ -1,66 +1,170 @@
 <!DOCTYPE html>
-<html>
-<style>
-body, html {
-  height: 100%;
-  margin: 0;
-}
+<html lang="en">
 
-.bgimg {
-  background-image: url('img/banner/temp.jpg');
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  color: rgb(0, 0, 0);
-  font-size: 25px;
-}
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Duftparadies - A chogan perfumes website</title>
+  <link rel="website icon" href="img/logo.png" type="png" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
 
-.topleft {
-  position: absolute;
-  top: 20px;
-  left: 16px;
-}
+  <link rel="stylesheet" href="css/style.css" />
+  <style></style>
+</head>
 
-.bottomleft {
-  position: absolute;
-  bottom: 0;
-  left: 16px;
-}
-.bottomleft a{
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-}
-
-.middle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-hr {
-  margin: auto;
-  width: 40%;
-}
-</style>
 <body>
+  <section id="header">
+    <a href="index.html"><img src="img/logo.png" alt="logo" /></a>
+    <div>
+      <ul id="navbar">
+        <li><a href="index.html">Heim</a></li>
+        <div class="dropdown">
+          <li class="dropbtn">Parfums <i class="far fa-arrow-down"></i></li>
+          <div class="dropdown-content">
+            <a href="shop.html">Ganz</a>
+            <a href="damen.html">Damen</a>
+            <a href="herren.html">Herren</a>
+            <a href="luxury.html">Luxury</a>
 
-<div class="bgimg">
-  <div class="topleft">
-   <a href="index.html"><img src="img/logo.png" alt=""></a>
-  </div>
-  <div class="middle">
-    <h1>Im Bau:</h1>
-    <hr>
-    <p>Aufbau einer besseren Erfahrung</p>
-  </div>
-  <div class="bottomleft">
-    <p><a href="https://www.webtoils.com/">
-        Webtoils Development LLP.</a></p>
-  </div>
-</div>
+          </div>
+        </div>
+        <!-- <li><a href="blog.html">Blog</a></li> -->
 
+        <li><a href="partner.html">Vertriebspartner Werden</a></li>
+        <li><a href="chogan.html">Was ist CHOGAN?</a></li>
+        <li><a href="about.html">Über uns</a></li>
+        <li><a href="contact.html">Kontakt uns</a></li>
+        <li>
+          <!-- <i class="far fa-shopping-bag" id="lg-bag"></i> -->
+          <a class="active" href="cart.html" id="lg-bag"><i class="far fa-shopping-bag"></i></a>
+        </li>
+        <i id="close" class="far fa-times"></i>
+      </ul>
+    </div>
+    <div id="mobile">
+      <!-- <a href="cart.html"><i class="far fa-shopping-bag"></i></a> -->
+      <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+
+      <i id="bar" class="fas fa-outdent"></i>
+    </div>
+  </section>
+  <section id="page-header" class="contact-header">
+    <h2>#Wagen</h2>
+
+    <p>Überprüfen und Auschecken Ihrer Artikel</p>
+  </section>
+  <section id="cart" class="section-p1">
+    <table width="100%">
+      <thead>
+        <tr>
+          <td>Remove</td>
+          <td>Image</td>
+          <td>Product</td>
+          <td>Price</td>
+          <td>Quantity</td>
+          <td>Subtotal</td>
+          <tbody>
+            <tr>
+              <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+              <td><img src="img/products/001-1million.webp" alt=""></td>
+              <td>001 – Million Chogan Parfum Duftnote (Ambery Oriental / Leder)</td>
+              <td>€ 52.00</td>
+              <td><input type="number" name=""  value="1"></td>
+              <td>€ 52.00</td>
+            </tr>
+            <tr>
+              <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+              <td><img src="img/products/001-1million.webp" alt=""></td>
+              <td>001 – Million Chogan Parfum Duftnote (Ambery Oriental / Leder)</td>
+              <td>€ 52.00</td>
+              <td><input type="number" name=""  value="1"></td>
+              <td>€ 52.00</td>
+            </tr>
+            <tr>
+              <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+              <td><img src="img/products/001-1million.webp" alt=""></td>
+              <td>001 – Million Chogan Parfum Duftnote (Ambery Oriental / Leder)</td>
+              <td>€ 52.00</td>
+              <td><input type="number" name=""  value="1"></td>
+              <td>€ 52.00</td>
+            </tr>
+          </tbody>
+        </tr>
+      </thead>
+    </table>
+  </section>
+  <section id="cart-add" class="section-p1">
+    <div id="coupon">
+      <h3>Apply coupon</h3>
+      <div><input type="text" placeholder="Enter Your Coupon">
+      <button class="normal">Apply</button></div>
+    </div>
+    <div id="subtotal">
+      <h3>Cart Totals</h3>
+      <table>
+        <tr>
+          <td>Cart subtotal</td>
+          <td>€ 156</td>
+        </tr>
+        <tr>
+          <td>Shipping </td>
+          <td>Free</td>
+        </tr>
+        <td><strong>Total</strong></td>
+        <td><strong>€ 156</strong></td>
+
+      </table>
+      <button class="normal">Proceed to checkout</button>
+    </div>
+  </section>
+
+  <footer class="section-p1">
+    <div class="col">
+      <img class="logo" src="img/logo.png" alt="Logo" />
+      <h4>Kontakt</h4>
+      <p><strong>Adresse: </strong> Lorem ipsum , Germany</p>
+      <p><strong>Telefon: </strong> +32020 30022</p>
+      <p><strong>Öffnungszeiten: </strong> 24 X 7</p>
+      <div class="follow">
+        <h4>Folgen Sie uns</h4>
+        <div class="icon">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <h4>Schnelle Links</h4>
+      <a href="about.html">Über uns</a>
+      <a href="delivery.html"> Lieferbedingungen</a>
+      <a href="privacy.html">Datenschutz-Bestimmungen</a>
+      <a href="terms.html"> Terms & amp; Bedingungen</a>
+      <a href="contact.html">Kontaktiere uns</a>
+    </div>
+    <div class="col">
+      <h4>Mein Konto</h4>
+      <a href="#">Anmelden</a>
+      <a href="#">Warenkorb ansehen</a>
+      <a href="#">Meine Wunschliste</a>
+      <a href="#">Meine Bestellung verfolgen</a>
+      <a href="#">Hilfe</a>
+    </div>
+    <div class="col">
+      <p>Sichere Zahlungsgateways</p>
+      <img src="img/pay/pay.png" alt="" />
+    </div>
+    <div class="copyright">
+      <p>
+        <i class="fa fa-copyright"></i> 2023,<a href="https://www.webtoils.com/">
+          Webtoils Development LLP.</a>
+        All Rights reversed.
+      </p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
 </body>
+
 </html>
